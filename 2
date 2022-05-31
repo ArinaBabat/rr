@@ -1,0 +1,11 @@
+ss=input()
+q=0
+w=len(ss)
+for c in range(len(ss)):
+  if ss[c]=='"':
+    if q==0: 
+      q=c+1
+    else:
+      w=c
+if q!=0:
+  print(ss[q:w])
